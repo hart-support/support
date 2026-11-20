@@ -6,13 +6,18 @@
   <title>HART — Project & Support</title>
   <style>
     :root {
-      --bg: #0f0f11;
-      --card: #18181c;
-      --text: #f4f4f6;
-      --muted: #a1a1aa;
-      --accent: #f97316;
-      --accent-hover: #ea580c;
-      --border: #27272d;
+      --bg: #121110;
+      --card: #1b1917;
+      --card-soft: #23201d;
+      --text: #f3f2f0;
+      --muted: #b0aba4;
+      --accent: #e06d1b;
+      --accent-bright: #f27b24;
+      --border-orange: rgba(224, 109, 27, 0.55);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --card-glow: 0 0 28px rgba(224, 109, 27, 0.16), 0 14px 34px rgba(0, 0, 0, 0.5);
+      --btn-glow: 0 0 22px rgba(224, 109, 27, 0.36), 0 6px 18px rgba(0, 0, 0, 0.35);
+      --btn-glow-hover: 0 0 32px rgba(242, 123, 36, 0.56), 0 8px 24px rgba(0, 0, 0, 0.45);
     }
 
     * {
@@ -23,187 +28,106 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(circle at top, #1f1915 0%, var(--bg) 55%);
+      background-color: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
-      line-height: 1.55;
+      padding: 28px 18px;
+      line-height: 1.5;
     }
 
-    .container {
+    .wrap {
       width: 100%;
-      max-width: 520px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
 
     .top-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 10px;
     }
 
-    .badge {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
+    .pill {
+      background: var(--card);
+      border: 1px solid var(--border-orange);
+      color: var(--accent-bright);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(249, 115, 22, 0.12);
-      border: 1px solid rgba(249, 115, 22, 0.28);
-      padding: 6px 10px;
+      padding: 6px 11px;
       border-radius: 999px;
+      box-shadow: 0 0 16px rgba(224, 109, 27, 0.18);
     }
 
-    .lang-switch {
+    .lang-bar {
       display: flex;
       gap: 6px;
     }
 
     .lang-btn {
-      background: transparent;
+      background: var(--card);
       color: var(--muted);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-subtle);
       border-radius: 10px;
-      padding: 6px 10px;
+      padding: 6px 11px;
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
-      transition: 0.2s ease;
+      transition: all 0.2s ease;
     }
 
     .lang-btn:hover {
       color: var(--text);
-      border-color: #3f3f48;
+      border-color: var(--border-orange);
     }
 
     .lang-btn.active {
       background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-    }
-
-    h1 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    p {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 14px;
-    }
-
-    .note {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px 16px;
-      font-size: 14px;
-      color: var(--text);
-      margin-bottom: 22px;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      text-align: center;
-      text-decoration: none;
-      background: var(--accent);
       color: #ffffff;
-      font-weight: 600;
-      font-size: 16px;
-      padding: 14px 20px;
-      border-radius: 14px;
-      transition: background 0.2s ease, transform 0.15s ease;
+      border-color: var(--accent);
+      box-shadow: 0 0 16px rgba(224, 109, 27, 0.42);
     }
 
-    .btn:hover {
-      background: var(--accent-hover);
+    .stage-wrap {
+      position: relative;
+      padding-top: 52px;
     }
 
-    .btn:active {
-      transform: scale(0.99);
+    .mascot-aura {
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 128px;
+      height: 116px;
+      background: radial-gradient(circle, rgba(242, 123, 36, 0.42) 0%, rgba(224, 109, 27, 0.08) 58%, transparent 75%);
+      filter: blur(8px);
+      pointer-events: none;
+      z-index: 1;
     }
 
-    .footer {
-      margin-top: 18px;
-      font-size: 13px;
-      color: var(--muted);
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <main class="container">
-    <div class="top-bar">
-      <span class="badge" id="badge">HART</span>
-      <div class="lang-switch" aria-label="Language switcher">
-        <button class="lang-btn active" data-lang="uk" onclick="setLang('uk')">UK</button>
-        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" data-lang="pl" onclick="setLang('pl')">PL</button>
-      </div>
-    </div>
-
-    <h1 id="title"></h1>
-    <p id="desc"></p>
-    <div class="note" id="note"></div>
-
-    <!-- Замініть посилання нижче на своє -->
-    <a class="btn" id="cta" href="https://send.monobank.ua/YOUR_JAR_ID" target="_blank" rel="noopener noreferrer"></a>
-
-    <div class="footer" id="footer"></div>
-  </main>
-
-  <script>
-    const translations = {
-      uk: {
-        title: "Проєкт і підтримка",
-        desc: "Застосунок створюється для зручних тренувань, харчування та відстеження прогресу без зайвого шуму.",
-        note: "Усі функції працюють без обмежень. Підтримка — повністю добровільна та допомагає приділяти більше часу оновленням і стабільності.",
-        cta: "Підтримати розвиток",
-        footer: "Дякуємо, що користуєтесь застосунком і ділитесь відгуками."
-      },
-      en: {
-        title: "Project & Support",
-        desc: "The app is built for workouts, nutrition, and progress tracking without unnecessary clutter.",
-        note: "All features work without restrictions. Support is completely voluntary and helps dedicate more time to updates and stability.",
-        cta: "Support development",
-        footer: "Thank you for using the app and sharing your feedback."
-      },
-      pl: {
-        title: "Projekt i wsparcie",
-        desc: "Aplikacja powstała z myślą o treningach, żywieniu i śledzeniu postępów bez zbędnego szumu.",
-        note: "Wszystkie funkcje działają bez ograniczeń. Wsparcie jest całkowicie dobrowolne i pomaga poświęcać więcej czasu na aktualizacje oraz stabilność.",
-        cta: "Wesprzyj rozwój",
-        footer: "Dziękujemy za korzystanie z aplikacji i dzielenie się opiniami."
-      }
-    };
-
-    function setLang(lang) {
-      const t = translations[lang] || translations.uk;
-      document.documentElement.lang = lang;
-      document.getElementById("title").textContent = t.title;
-      document.getElementById("desc").textContent = t.desc;
-      document.getElementById("note").textContent = t.note;
-      document.getElementById("cta").textContent = t.cta;
-      document.getElementById("footer").textContent = t.footer;
-
-      document.querySelectorAll(".lang-btn").forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.lang === lang);
-      });
+    .mascot-peek {
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin: 0 auto -14px auto;
+      width: 98px;
+      height: 98px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.55));
     }
 
-    setLang("uk");
-  </script>
-</body>
-</html>
+    .card {
+      position: relative;
+      z-index: 3;
+      background: var(--card);
+      border: 1.5px solid var(--border-orange);
+      border-radius: 18px;
+      padding:

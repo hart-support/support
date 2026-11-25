@@ -25,9 +25,9 @@
 
   <section id="uk" lang="uk">
     <h1>Політика конфіденційності HART</h1>
-    <p class="muted">Діє з 20 листопада 2026 року</p>
+    <p class="muted">Оновлено 25 листопада 2026 року</p>
 
-    <p>HART — фітнес-застосунок для тренувань, харчування й кардіо. Коротко: <b>усі ваші дані зберігаються лише на вашому телефоні</b>. У застосунку немає облікових записів, реклами й аналітики, а ми не отримуємо, не продаємо й не передаємо ваші дані.</p>
+    <p>HART — фітнес-застосунок для тренувань, харчування й кардіо. У застосунку немає облікових записів, реклами й аналітики. Профіль, записи щоденника, тренування та GPS-треки зберігаються на пристрої. Для пошуку продуктів і показу карти HART звертається до зовнішніх сервісів, як описано нижче.</p>
 
     <h2>Які дані є в застосунку</h2>
     <ul>
@@ -35,74 +35,74 @@
       <li>Тренування, підходи, кардіо, заміри тіла, щоденник їжі й води.</li>
       <li>Налаштування застосунку.</li>
     </ul>
-    <p>Усе це зберігається в локальній базі на пристрої й нікуди не надсилається.</p>
+    <p>Ці записи зберігаються в локальній базі на пристрої. Ви можете експортувати резервну копію за власним запитом.</p>
 
     <h2>Дозволи</h2>
     <ul>
-      <li><b>Камера</b> — лише для сканування штрих-коду продукту. Знімки не зберігаються.</li>
-      <li><b>Геолокація</b> (зокрема у фоні під час запису) — лише для запису маршруту кардіо, який ви самі запустили. Маршрут зберігається на телефоні.</li>
-      <li><b>Health Connect</b> — читання пульсу, активних калорій і VO₂max за ваші тренування, лише якщо ви це дозволили. Дані з Health Connect використовуються тільки для показу в застосунку й не передаються третім особам.</li>
-      <li><b>Сповіщення</b> — локальні нагадування, які ви увімкнули самі.</li>
+      <li><b>Камера</b> — використовується, зокрема, для сканування штрихкодів продуктів. Для пошуку за штрихкодом застосунок використовує розпізнаний номер.</li>
+      <li><b>Геолокація</b> — використовується для запису маршруту кардіо, який ви запустили, і показу вашої позиції на карті. Під час активного запису маршрут може записуватися у фоні. Записаний маршрут зберігається на телефоні.</li>
+      <li><b>Health Connect</b> — читання пульсу, активних калорій і VO₂max за ваші тренування, лише якщо ви це дозволили. HART використовує ці дані для показу в застосунку й не надсилає їх зовнішнім сервісам.</li>
+      <li><b>Сповіщення</b> — локальні нагадування, які ви ввімкнули.</li>
     </ul>
 
     <h2>Звернення до інтернету</h2>
     <ul>
-      <li><b>Open Food Facts</b> — пошук продукту за штрих-кодом. Надсилається лише номер штрих-коду.</li>
-      <li><b>MapTiler / OpenStreetMap</b> — під час запису кардіо, коли карта показує вашу GPS-позицію, застосунок запитує у MapTiler фрагменти карти для ділянки навколо цієї позиції. Під час перегляду збереженого маршруту фрагменти запитуються для ділянки, яку показує карта. MapTiler отримує IP-адресу пристрою та ідентифікатори запитаних фрагментів, за якими можна визначити відображену ділянку. Записаний GPS-трек залишається на пристрої: застосунок малює його поверх карти локально.</li>
+      <li><b>Open Food Facts</b> — HART запитує інформацію про продукт за штрихкодом або введеним вами текстом. Якщо локальний пошук знаходить мало збігів, текстовий запит може надсилатися автоматично під час введення. Запити надсилаються через HTTPS. Open Food Facts отримує текст запиту або штрихкод та IP-адресу, з якої надійшов запит. HART не додає до цих запитів дані профілю, записи щоденника чи GPS-координати.</li>
+      <li><b>MapTiler / OpenStreetMap</b> — під час запису кардіо HART запитує через HTTPS у MapTiler фрагменти карти навколо вашої GPS-позиції. Під час перегляду збереженого маршруту HART запитує фрагменти для ділянки, яку показує карта. MapTiler отримує IP-адресу, з якої надійшов запит, та ідентифікатори фрагментів карти. За ними можна визначити ділянку, яку показує карта. HART малює записаний GPS-трек поверх карти локально.</li>
     </ul>
 
     <h2>Резервна копія</h2>
-    <p>Файл копії створюється лише на ваш запит і зберігається там, куди ви його відправите самі: Google Диск, месенджер, пошта.</p>
+    <p>Файл копії створюється за вашим запитом. Ви обираєте, де його зберегти або куди надіслати, наприклад на Google Диск, у месенджер чи на електронну пошту.</p>
 
     <h2>Видалення даних</h2>
-    <p>Налаштування → «Мої дані» → «Видалити». Або просто видаліть застосунок: дані зникнуть разом із ним.</p>
+    <p>Щоб видалити локальні дані HART, відкрийте «Налаштування» → «Мої дані» → «Видалити» або видаліть застосунок. Експортовані резервні копії можна видалити там, де ви їх зберегли.</p>
 
     <h2>Діти</h2>
-    <p>Застосунок не призначений для дітей до 13 років і не збирає про них даних.</p>
+    <p>HART не призначений для дітей віком до 13 років.</p>
 
     <h2>Контакт</h2>
-    <p>Питання щодо конфіденційності: <a href="mailto:harthard747@gmail.com">harthard747@gmail.com</a></p>
+    <p>Питання щодо конфіденційності можна надіслати на <a href="mailto:harthard747@gmail.com">harthard747@gmail.com</a>.</p>
   </section>
 
   <section id="en" lang="en">
     <h1>HART Privacy Policy</h1>
-    <p class="muted">Effective November 20, 2026</p>
+    <p class="muted">Updated November 25, 2026</p>
 
-    <p>HART is a fitness app for workouts, nutrition and cardio. In short: <b>all your data stays on your phone</b>. The app has no accounts, no ads and no analytics, and we do not receive, sell or share your data.</p>
+    <p>HART is a fitness app for workouts, nutrition and cardio. The app has no accounts, ads or analytics. Your profile, diary entries, workouts and GPS tracks are stored on your device. HART connects to external services for product lookup and map display, as described below.</p>
 
     <h2>What data the app holds</h2>
     <ul>
-      <li>Profile: sex, birth year, height, weight, goal, training level.</li>
-      <li>Workouts, sets, cardio, body measurements, food and water log.</li>
+      <li>Profile: sex, birth year, height, weight, goal and training level.</li>
+      <li>Workouts, sets, cardio, body measurements, and food and water logs.</li>
       <li>App settings.</li>
     </ul>
-    <p>All of this is stored in a local database on your device and is not sent anywhere.</p>
+    <p>These records are stored in a local database on your device. You can export a backup on request.</p>
 
     <h2>Permissions</h2>
     <ul>
-      <li><b>Camera</b> — only to scan a product barcode. No photos are stored.</li>
-      <li><b>Location</b> (including in the background while recording) — only to record a cardio route that you started. The route is stored on your phone.</li>
-      <li><b>Health Connect</b> — reads heart rate, active calories and VO₂max for your workouts, only if you allow it. Data from Health Connect is used only for display in the app and is not shared with third parties.</li>
-      <li><b>Notifications</b> — local reminders that you turned on yourself.</li>
+      <li><b>Camera</b> — used for features including product barcode scanning. For barcode lookup, the app uses the number read from the barcode.</li>
+      <li><b>Location</b> — used to record a cardio route you start and to show your position on the map. While recording is active, the app can continue recording the route in the background. The recorded route is stored on your phone.</li>
+      <li><b>Health Connect</b> — reads heart rate, active calories and VO₂max for your workouts only if you grant permission. HART uses this data for display in the app and does not send it to external services.</li>
+      <li><b>Notifications</b> — local reminders you enable.</li>
     </ul>
 
     <h2>Internet requests</h2>
     <ul>
-      <li><b>Open Food Facts</b> — product lookup by barcode. Only the barcode number is sent.</li>
-      <li><b>MapTiler / OpenStreetMap</b> — when the map shows your GPS position during a cardio workout, the app requests map tiles from MapTiler for the area around that position. When you view a saved route, the app requests tiles for the area shown on the map. MapTiler receives your device’s IP address and the requested tile identifiers, which reveal the area displayed. The recorded GPS track stays on your device: the app draws it locally over the map.</li>
+      <li><b>Open Food Facts</b> — HART looks up product information using a barcode or text you enter. If local search finds few matches, HART may send the text automatically while you type. Requests are sent over HTTPS. Open Food Facts receives the search text or barcode and the IP address the request comes from. HART does not include profile data, diary entries or GPS coordinates in these requests.</li>
+      <li><b>MapTiler / OpenStreetMap</b> — during cardio recording, HART requests map tiles from MapTiler over HTTPS for the area around your GPS position. When you view a saved route, HART requests tiles for the area shown on the map. MapTiler receives the IP address the request comes from and the requested tile identifiers, which indicate the area shown. HART draws the recorded GPS track over the map locally.</li>
     </ul>
 
     <h2>Backups</h2>
-    <p>A backup file is created only when you ask for it and is stored wherever you send it: Google Drive, a messenger, email.</p>
+    <p>A backup file is created on request. You choose where to save or send it, such as Google Drive, a messaging app or email.</p>
 
     <h2>Deleting data</h2>
-    <p>Settings → “My data” → “Delete”. Or simply uninstall the app: the data is removed with it.</p>
+    <p>To delete local HART data, open Settings → “My data” → “Delete”, or uninstall the app. You can delete exported backups from wherever you saved them.</p>
 
     <h2>Children</h2>
-    <p>The app is not directed at children under 13 and does not collect data about them.</p>
+    <p>HART is not intended for children under 13.</p>
 
     <h2>Contact</h2>
-    <p>Privacy questions: <a href="mailto:harthard747@gmail.com">harthard747@gmail.com</a></p>
+    <p>For privacy questions, email <a href="mailto:harthard747@gmail.com">harthard747@gmail.com</a>.</p>
   </section>
 </main>
 </body>

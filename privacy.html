@@ -48,7 +48,7 @@
     <h2>Звернення до інтернету</h2>
     <ul>
       <li><b>Open Food Facts</b> — пошук продукту за штрих-кодом. Надсилається лише номер штрих-коду.</li>
-      <li><b>MapTiler / OpenStreetMap</b> — завантаження фрагментів карти під час запису кардіо. Ваш маршрут не надсилається, але, як і будь-який вебзапит, сервіс бачить IP-адресу й ділянку карти, що завантажується.</li>
+      <li><b>MapTiler / OpenStreetMap</b> — під час запису кардіо, коли карта показує вашу GPS-позицію, застосунок запитує у MapTiler фрагменти карти для ділянки навколо цієї позиції. Під час перегляду збереженого маршруту фрагменти запитуються для ділянки, яку показує карта. MapTiler отримує IP-адресу пристрою та ідентифікатори запитаних фрагментів, за якими можна визначити відображену ділянку. Записаний GPS-трек залишається на пристрої: застосунок малює його поверх карти локально.</li>
     </ul>
 
     <h2>Резервна копія</h2>
@@ -89,7 +89,7 @@
     <h2>Internet requests</h2>
     <ul>
       <li><b>Open Food Facts</b> — product lookup by barcode. Only the barcode number is sent.</li>
-      <li><b>MapTiler / OpenStreetMap</b> — map tiles while recording cardio. Your route is not sent, but like any web request the service sees your IP address and the map area being loaded.</li>
+      <li><b>MapTiler / OpenStreetMap</b> — when the map shows your GPS position during a cardio workout, the app requests map tiles from MapTiler for the area around that position. When you view a saved route, the app requests tiles for the area shown on the map. MapTiler receives your device’s IP address and the requested tile identifiers, which reveal the area displayed. The recorded GPS track stays on your device: the app draws it locally over the map.</li>
     </ul>
 
     <h2>Backups</h2>
